@@ -1,0 +1,42 @@
+Cria a pasta e digita o comando => yarn init -y  "Para iniciar projeto package.json"
+
+Primeira depencia a ser instalada express => yarn add express -D
+
+CRIA PRIMEIRA ROTA 
+
+const express = require("express");
+
+const app = express();
+
+app.get('/projetos', (request, response) => {
+    return response.send('Hello World')
+});
+
+app.listen(3333);
+
+
+
+ATUALIZAÇÂO AUTOMATICA INSTAL NODEMON
+
+yarn add nodemon -D
+
+- criar script no package.json 
+
+"scripts": {
+    "start": "nodemon src/index.js"
+  },
+
+----------------------------------------------
+
+yarn add uuidv4 => dependencia para criar meu id unico    para instalar no code => const { uuid } = require("uuidv4")
+
+
+TIPO DE PARAMETROS 
+
+* Query Params: Filtro e paginação
+* Route Params: Indentificar recursos (Atualizar/Deletar)
+* Request Body: Conteudo na hora criar ou editar um recurso (JSON)
+
+Middleware: 
+
+* Interceptador de requisiçoes que interromper totalmente a requisicao ou alterar dados da requisicao
