@@ -11,6 +11,8 @@
     "nodemon": "^2.0.4"
   },
   "dependencies": {
+    "cord": "^1.0.0",
+    "cors": "^2.8.5",
     "uuidv4": "^6.2.3"
   }
 }
